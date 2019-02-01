@@ -74,4 +74,4 @@ end
 puts "_______________________________"
 puts ""
 sleep(2)
-puts "ALL GOOD, DB fresh and ready to be explored like your life"
+puts "ALL GOOD, DB fresh and ready to be explored as life"
