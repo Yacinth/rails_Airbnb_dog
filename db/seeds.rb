@@ -7,31 +7,25 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-puts "destroy database.."
+puts "Destroy database.."
 sleep(1)
 Dogsitter.destroy_all
 Dog.destroy_all
 City.destroy_all
 Stroll.destroy_all
-puts "ok"
-puts "delete from sqlite_sequence..."
+puts "Delete from sqlite_sequence..."
 sleep(1)
 ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'dogs'")
 ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'dogsitters'")
 ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'cities'")
 ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'strolls'")
 puts "Sucess, old DB deleted"
-puts ""
-
 sleep(1)
-
 puts "generate new DB..."
-
 puts ""
 puts "_______________________________"
 puts ""
-
-sleep(1)
+sleep(1.5)
 
 10.times do
 	city = City.create!(city_name: Faker::Address.city)
@@ -40,7 +34,6 @@ end
 
 puts "_______________________________"
 puts ""
-
 sleep(1)
 
 15.times do 
@@ -51,7 +44,6 @@ end
 
 puts "_______________________________"
 puts ""
-
 sleep(1)
 
 10.times do 
@@ -62,7 +54,6 @@ end
 
 puts "_______________________________"
 puts ""
-
 sleep(1)
 
 15.times do 
