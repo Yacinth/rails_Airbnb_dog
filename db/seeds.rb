@@ -21,7 +21,7 @@ ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 
 ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'strolls'")
 puts "Sucess, all DB deleted"
 sleep(1)
-puts "generate new DB..."
+puts "Generate new DB..."
 puts ""
 puts "_______________________________"
 puts ""
