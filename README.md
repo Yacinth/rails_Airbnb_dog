@@ -8,7 +8,7 @@ Des Chiens, des Dogsitters, des stroll et des Cities...
 
 ## Ruby version
 
-```ruby
+```ruby..
 ruby 2.5.1
 ```
 
